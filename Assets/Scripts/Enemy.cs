@@ -35,11 +35,11 @@ public class Enemy : MonoBehaviour
 
     //Make waypoints object child of root
     waypoints.transform.SetParent(root.transform);
-    waypoints.transform.position = Vector3.zero;
+    waypoints.transform.position = root.transform.position;
     //Create two points (gamerobject) and reset their position to waypoints object
     //Make the points children of waypoint object
-    GameObject p1 = new GameObject("Point1");p1.transform.SetParent(waypoints.transform);p1.transform.position=Vector3.zero;
-    GameObject p2 = new GameObject("Point2");p1.transform.SetParent(waypoints.transform);p2.transform.position=Vector3.zero;
+    GameObject p1 = new GameObject("Point1");p1.transform.SetParent(waypoints.transform);p1.transform.position = root.transform.position;
+    GameObject p2 = new GameObject("Point2");p1.transform.SetParent(waypoints.transform);p2.transform.position = root.transform.position;
 
     //Init points list then add the points to it
     points = new List<Transform>();
