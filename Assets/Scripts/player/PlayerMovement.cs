@@ -7,7 +7,8 @@ using UnityEngine.Events;
 
 
 public class PlayerMovement : MonoBehaviour {
-
+         
+        //Movements 
         public CharacterController2D controller;
 
         public float runSpeed = 40f;
@@ -15,7 +16,19 @@ public class PlayerMovement : MonoBehaviour {
         float horizontalMove = 0f;
         bool jump = false;
         bool crouch = false;
+
+        //Start() variables
        public Animator animator;
+       private Rigidbody2D rb;
+       private Collider2D colli;
+
+      
+
+     
+
+      
+
+     
 
     [Header("Events")]
     [Space]
@@ -25,13 +38,13 @@ public class PlayerMovement : MonoBehaviour {
     [System.Serializable]
     public class BoolEvent : UnityEvent<bool> { }
 
-    //private Rigidbody2D rb; //Tells script there is a rigidbody, we can use variable rb to reference it in further script
+    
 
 
     // Start is called before the first frame update
     void Start()
         {
-            //rb = GetComponent<Rigidbody2D>(); //rb equals the rigidbody on the player
+           
            animator = GetComponent<Animator>();
         }
 
