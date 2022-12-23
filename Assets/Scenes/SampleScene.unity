@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013de924f3f38c242bff7cf9871a43e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: 0.55
+  parallaxEffectMultiplier: 0.6
 --- !u!212 &77778580
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27843,7 +27843,7 @@ GameObject:
   - component: {fileID: 416060852}
   - component: {fileID: 416060851}
   - component: {fileID: 416060850}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: night-beach-cloud-03 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27862,7 +27862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013de924f3f38c242bff7cf9871a43e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: 0.47
+  parallaxEffectMultiplier: 0.6
 --- !u!212 &416060851
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35938,7 +35938,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013de924f3f38c242bff7cf9871a43e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: 0.47
+  parallaxEffectMultiplier: 0.6
 --- !u!212 &900150298
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36764,7 +36764,7 @@ GameObject:
   - component: {fileID: 1782582064}
   - component: {fileID: 1782582063}
   - component: {fileID: 1782582062}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: night-beach-cloud-01 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36783,7 +36783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013de924f3f38c242bff7cf9871a43e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: 0.55
+  parallaxEffectMultiplier: 0.6
 --- !u!212 &1782582063
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36881,7 +36881,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 013de924f3f38c242bff7cf9871a43e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: 0.9
+  parallaxEffectMultiplier: 0.8
 --- !u!212 &1835356928
 SpriteRenderer:
   m_ObjectHideFlags: 0
