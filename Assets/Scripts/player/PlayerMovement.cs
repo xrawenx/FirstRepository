@@ -70,14 +70,7 @@ public class PlayerMovement : MonoBehaviour {
                 crouch = false;
                 
             }
-            
-        void OnTriggerEnter2D(Collider2D other)
-        {
-             if (other.gameObject.CompareTag("Cherry"))
-            {
-                Destroy(other.gameObject);
-            } 
-        }
+        
            
         }   
             public void OnLanding () 
