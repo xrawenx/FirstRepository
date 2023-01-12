@@ -12,24 +12,34 @@ public class JumpEnemyAttacker : MonoBehaviour
     [SerializeField] Transform wallCheckPoint;
     [SerializeField] float circleRadius;
     [SerializeField] LayerMask groundLayer;
-    public bool checkingGround;
-    public bool checkingWall;
+    private bool checkingGround;
+    private bool checkingWall;
+
+    [Header("For JumpAttacking")]
+    [SerializeField] float jumpHeight;
+    [SerializeField] Transform player;
+    [SerializeField] Transform groundCheck;
+    [SerializeField] Vector2 boxSize;
+    private bool isGrounded;
+
     [Header("Other")]
     public Rigidbody2D enemyRB;
 
-
-    // Start is called before the first frame update
     void Start()
     {
       enemyRB = GetComponent<Rigidbody2D>();  
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
        checkingGround = Physics2D.OverlapCircle(groundCheckPoint.position, circleRadius, groundLayer);
        checkingWall = Physics2D.OverlapCircle(wallCheckPoint.position, circleRadius, groundLayer);
+       isGrounded = Physics2D.OverlapBox(groundCheck.position, boxSize, 0, groundLayer);
        Petrolling();
+       if (Input.GetKeyDown(KeyCode.Space))
+       {
+           JumpAttack();
+       }
     }
 
     void Petrolling()
@@ -48,6 +58,17 @@ public class JumpEnemyAttacker : MonoBehaviour
         enemyRB.velocity = new Vector2(moveSpeed * moveDirection, enemyRB.velocity.y); 
     }
 
+    void JumpAttack()
+    {
+        float distanceFromPlayer = player.position.x - transform.position.x;
+
+        if (isGrounded)
+        {
+            enemyRB.AddForce(new Vector2(distanceFromPlayer, jumpHeight), ForceMode2D.Impulse);
+        }
+    }
+ 
+
     void Flip()
     {
       moveDirection *= -1;
@@ -60,6 +81,8 @@ public class JumpEnemyAttacker : MonoBehaviour
        Gizmos.color = Color.blue;
        Gizmos.DrawWireSphere(groundCheckPoint.position, circleRadius);
        Gizmos.DrawWireSphere(wallCheckPoint.position, circleRadius);
+       Gizmos.color = Color.green;
+       Gizmos.DrawCube(groundCheck.position, boxSize);
 
     }
 }
