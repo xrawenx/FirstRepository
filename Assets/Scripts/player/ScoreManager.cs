@@ -23,4 +23,6 @@ public class ScoreManager : MonoBehaviour
      score += cherryValue;
      text.text = "X" + score.ToString();
     }
+
+    
 }
