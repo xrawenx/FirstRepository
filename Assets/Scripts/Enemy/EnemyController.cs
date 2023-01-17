@@ -24,7 +24,7 @@ public class EnemyController : MonoBehaviour
 
         foreach (var boxCollider2D in _colliders)
         {
-            boxCollider2D.enabled = false;
+            boxCollider2D.enabled = true;
         }
         
         Wait(() =>
