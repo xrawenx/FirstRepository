@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GuardPointToPoint : MonoBehaviour
 {
-    public bool chasePlayer;
 
     private Animator anim;
 
@@ -20,6 +19,8 @@ public class GuardPointToPoint : MonoBehaviour
     [SerializeField]
     private float moveSpeed = 2f;
 
+    private bool chasePlayer;
+
     private void Awake()
     {
         anim = GetComponent<Animator>();
@@ -32,7 +33,11 @@ public class GuardPointToPoint : MonoBehaviour
 
     private void Update()
     {
-        MoveToTarget();
+        if (chasePlayer)
+            MoveToPlayer();
+        else
+            MoveToTarget();
+
         HandleFacingDirection();
     }
 
@@ -43,6 +48,7 @@ public class GuardPointToPoint : MonoBehaviour
 
     void MoveToTarget()
     {
+
         transform.position =
             Vector2.MoveTowards(transform.position, currentMovementPoint, Time.deltaTime * moveSpeed);
 
@@ -51,7 +57,7 @@ public class GuardPointToPoint : MonoBehaviour
             SetMovementPointTarget();
         }
 
-        
+        AnimateMovement(true);
     }
 
     void SetMovementPointTarget()
@@ -84,6 +90,22 @@ public class GuardPointToPoint : MonoBehaviour
         }
 
         transform.localScale = tempScale;
+    }
+
+    void MoveToPlayer()
+    {
+        transform.position =
+            Vector2.MoveTowards(transform.position, currentMovementPoint, Time.deltaTime * moveSpeed);
+
+        if (Vector2.Distance(transform.position, currentMovementPoint) < 0.1f)
+        {
+            AnimateMovement(false);
+        }
+        else
+        {
+            AnimateMovement(true);
+        }
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
