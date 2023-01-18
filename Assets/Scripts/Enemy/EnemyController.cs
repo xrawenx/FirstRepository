@@ -5,12 +5,14 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    
     private Animator _animator;
     private BoxCollider2D[] _colliders;
     private void Start()
     {
         _animator = GetComponent<Animator>();
         _colliders = GetComponents<BoxCollider2D>();
+        
     }
 
     public void Kill()
