@@ -8,6 +8,7 @@ TagManager:
   - Cherry
   - Trap
   - Gem
+  - Weak Point
   layers:
   - Default
   - TransparentFX
