@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour {
 
         public float runSpeed = 40f;
 
+        private Vector2 velocity;
         float horizontalMove = 0f;
         bool jump = false;
         bool crouch = false;
@@ -21,6 +22,11 @@ public class PlayerMovement : MonoBehaviour {
        public Animator animator;
        private Rigidbody2D rb;
        private Collider2D colli;
+
+       public float gravity => (-2f * maxJumpHeight) / Mathf.Pow(maxJumpTime / 2f, 2f);
+       public float maxJumpHeight = 5f;
+       public float maxJumpTime = 1f;
+       public float jumpForce => (2f * maxJumpHeight) / (maxJumpTime / 2f);
 
       
 
@@ -89,4 +95,28 @@ public class PlayerMovement : MonoBehaviour {
         jump = false;
         
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            if (transform.DotTest(collision.transform, Vector2.down))
+            {
+                velocity.y = jumpForce / 2f;
+                jump = true;
+            }
+        }
+    }
+
+    private void ApplyGravity()
+    {
+        // check if falling
+        bool falling = velocity.y < 0f || !Input.GetButton("Jump");
+        float multiplier = falling ? 2f : 1f;
+
+        // apply gravity and terminal velocity
+        velocity.y += gravity * multiplier * Time.deltaTime;
+        velocity.y = Mathf.Max(velocity.y, gravity / 2f);
+    }
+
 }

@@ -8,9 +8,12 @@ public class Slimer : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            PlayerLife playerlife = collision.gameObject.GetComponent<PlayerLife>();
 
             if (collision.transform.DotTest(transform, Vector2.down)) {
                 Flatten();
+            } else {
+                playerlife.Hit();
             } 
             
         }

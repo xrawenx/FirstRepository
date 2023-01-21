@@ -7,12 +7,25 @@ public class PlayerLife : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    public DeathAnimation deathAnimation { get; private set; }
      
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        deathAnimation = GetComponent<DeathAnimation>();
     }
+
+    public void Hit()
+    {
+       Death();
+    }
+
+    public void Death()
+    {
+        deathAnimation.enabled = true;
+    }
+
 
     private void OnCollisionEnter2D(Collision2D collision) 
     { 
@@ -32,6 +45,7 @@ public class PlayerLife : MonoBehaviour
         rb.bodyType = RigidbodyType2D.Static;
         anim.SetTrigger("Death");
     }
+
 
     private void RestartLevel()
     {
