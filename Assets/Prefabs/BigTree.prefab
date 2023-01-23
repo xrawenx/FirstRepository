@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 7030387268430816451}
   - component: {fileID: -4974929137643147676}
   - component: {fileID: 2223040896359239263}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: BigTree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -325,7 +325,7 @@ MonoBehaviour:
   skulls: {fileID: 1067627407168122203}
   bush: {fileID: 2994521326138425790}
   planthouse: {fileID: 0}
-  speed: 6
+  speed: 2
   nextWorld: 1
   nextStage: 1
 --- !u!61 &2223040896359239263

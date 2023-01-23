@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour {
            animator = GetComponent<Animator>();
         }
 
-
+        
         // Update is called once per frame
         void Update()
         {
@@ -118,5 +118,6 @@ public class PlayerMovement : MonoBehaviour {
         velocity.y += gravity * multiplier * Time.deltaTime;
         velocity.y = Mathf.Max(velocity.y, gravity / 2f);
     }
+
 
 }

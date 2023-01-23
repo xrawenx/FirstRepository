@@ -6,7 +6,7 @@ public class PlantHouse : MonoBehaviour
     public Transform skulls;
     public Transform bush;
     public Transform planthouse;
-    public float speed = 6f;
+    public float speed = 3f;
     public int nextWorld = 1;
     public int nextStage = 1;
 
