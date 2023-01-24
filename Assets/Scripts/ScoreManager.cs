@@ -5,7 +5,7 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    ScoreManager.instance.AddPoint(cherry, gem);
+    ScoreManager.instance.AddPoint (cherry, gem;)
     public TextMeshProUGUI cherryText;
     public TextMeshProUGUI gemText;
 
