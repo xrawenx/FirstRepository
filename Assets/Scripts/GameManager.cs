@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-
+   
     public int world { get; private set; }
     public int stage { get; private set; }
     public int lives { get; private set; }
@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void AddCoin()
+    public void AddCherry()
     {
         cherry++;
 

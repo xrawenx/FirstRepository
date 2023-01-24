@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cherry : MonoBehaviour
+public class Gem : MonoBehaviour
 {
-    public int cherryValue = 1;
+    public int gemValue = 2;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
 
-            ScoreManager.instance.ChangeScore(cherryValue);
+            ScoreManager.instance.ChangeScore(gemValue);
 
             Destroy(gameObject);
 
