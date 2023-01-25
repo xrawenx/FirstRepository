@@ -30,6 +30,7 @@ public class ScoreManager : MonoBehaviour
         cherryText.text = ": " + cherry;
         gem += 2;
         gemText.text = ": " + gem;
+        
     }
     
     
