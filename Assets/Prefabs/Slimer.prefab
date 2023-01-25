@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7170665068450002803}
   - component: {fileID: 455493402593087640}
   - component: {fileID: -6935387896369278154}
+  - component: {fileID: 8294072360867176043}
   m_Layer: 7
   m_Name: Slimer
   m_TagString: Enemy
@@ -190,3 +191,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 2560864674655497541}
   deadSprite: {fileID: 21300000, guid: ff54077aa8eac95428ff9f1e86f4045f, type: 3}
+--- !u!95 &8294072360867176043
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2560864674655497536}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4d30938a335c5ef4d9a41a1aa7cd99dd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
