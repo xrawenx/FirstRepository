@@ -123,6 +123,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &1986846
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1986848}
+  - component: {fileID: 1986847}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1986847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd2a5c2fa10e2274ca8d7f3983c48d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cherryText: {fileID: 1302190036}
+  gemText: {fileID: 1394647941}
+--- !u!4 &1986848
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986846}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.9761624, y: 0.5113964, z: -2.7679148}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3220105
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,6 +335,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &15707473 stripped
@@ -412,6 +462,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -573,6 +627,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &139490426 stripped
@@ -634,6 +692,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -759,6 +821,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &198434475 stripped
@@ -821,6 +887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &208231954 stripped
@@ -882,6 +952,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -1068,6 +1142,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -30570,6 +30648,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &325302748 stripped
@@ -30631,6 +30713,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -30756,6 +30842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &409310090 stripped
@@ -30817,6 +30907,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -31059,7 +31153,6 @@ GameObject:
   - component: {fileID: 474581169}
   - component: {fileID: 474581168}
   - component: {fileID: 474581167}
-  - component: {fileID: 474581170}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -31082,7 +31175,7 @@ RectTransform:
   - {fileID: 1302190038}
   - {fileID: 1394647940}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -31150,19 +31243,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 3
   m_TargetDisplay: 0
---- !u!114 &474581170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474581165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd2a5c2fa10e2274ca8d7f3983c48d7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
 --- !u!1001 &475956996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31279,6 +31359,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -31560,7 +31644,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -36463,7 +36547,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &659136929
 PrefabInstance:
@@ -36519,6 +36603,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (28)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -36666,6 +36754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &686182750 stripped
@@ -36710,7 +36802,7 @@ Transform:
   - {fileID: 1011908361}
   - {fileID: 1854979169}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &713235819
 PrefabInstance:
@@ -36913,6 +37005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &748394626 stripped
@@ -36986,7 +37082,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &782130724
 PrefabInstance:
@@ -43684,6 +43780,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &862819112 stripped
@@ -43920,7 +44020,7 @@ Transform:
   - {fileID: 416060852}
   - {fileID: 1835356929}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &940837573
 PrefabInstance:
@@ -43976,6 +44076,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (32)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -44390,6 +44494,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &1019251018 stripped
@@ -44451,6 +44559,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -44576,6 +44688,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &1066653365 stripped
@@ -44638,6 +44754,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &1114127370 stripped
@@ -44699,6 +44819,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -44771,6 +44895,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -44889,7 +45017,7 @@ GameObject:
   - component: {fileID: 1302190037}
   - component: {fileID: 1302190036}
   m_Layer: 5
-  m_Name: Score_text
+  m_Name: ScoreCherry
   m_TagString: Cherry
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44915,7 +45043,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X0
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -45010,7 +45138,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 155.6, y: -37}
+  m_AnchoredPosition: {x: 155.60004, y: -37}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1335555669
@@ -45067,6 +45195,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -45188,7 +45320,7 @@ Transform:
   - {fileID: 1563667192}
   - {fileID: 1547299176}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1387435804
 PrefabInstance:
@@ -45245,6 +45377,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &1387435805 stripped
@@ -45264,7 +45400,7 @@ GameObject:
   - component: {fileID: 1394647942}
   - component: {fileID: 1394647941}
   m_Layer: 5
-  m_Name: Score_text2
+  m_Name: ScoreGem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45311,7 +45447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: X0
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
   m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
@@ -45505,6 +45641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &1425574842 stripped
@@ -45629,6 +45769,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &1456148360 stripped
@@ -45691,6 +45835,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &1478423279 stripped
@@ -45752,6 +45900,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -46015,7 +46167,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1563667191
 PrefabInstance:
@@ -46859,6 +47011,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &1882713082 stripped
@@ -46921,6 +47077,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &1897003087 stripped
@@ -46982,6 +47142,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -47136,7 +47300,7 @@ Transform:
   - {fileID: 713235820}
   - {fileID: 48186202}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2008244201
 PrefabInstance:
@@ -47192,6 +47356,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (33)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -47254,6 +47422,10 @@ PrefabInstance:
     - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
       propertyPath: m_Name
       value: Cherry (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
@@ -47331,7 +47503,7 @@ Transform:
   m_Children:
   - {fileID: 311515490}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2056449752
 PrefabInstance:
@@ -47450,6 +47622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cherry (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3663835682081769823, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91861d6aca277c041b3f6125ddaa3b30, type: 3}
 --- !u!4 &2084995214 stripped
@@ -47524,7 +47700,7 @@ Transform:
   - {fileID: 1882713082}
   - {fileID: 800693095}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2131150787 stripped
 Transform:
@@ -47826,6 +48002,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5377110448938385900, guid: 1772a4bd0015072428ab49e2b072fb0f, type: 3}
+      propertyPath: gemValue
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1772a4bd0015072428ab49e2b072fb0f, type: 3}
 --- !u!1001 &7030387267877408784
@@ -47926,7 +48106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7117130530206022644, guid: 29f8f97bd3798754dac2ee9cdb00da67, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7117130530206022644, guid: 29f8f97bd3798754dac2ee9cdb00da67, type: 3}
       propertyPath: m_LocalPosition.x
@@ -48037,6 +48217,14 @@ PrefabInstance:
     - target: {fileID: 9078312528862580898, guid: 325140c1e6edf4e49af8110287cdc1ae, type: 3}
       propertyPath: m_Name
       value: Cherry
+      objectReference: {fileID: 0}
+    - target: {fileID: 9078312528862580900, guid: 325140c1e6edf4e49af8110287cdc1ae, type: 3}
+      propertyPath: cherry
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9078312528862580900, guid: 325140c1e6edf4e49af8110287cdc1ae, type: 3}
+      propertyPath: ScoreManager
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 325140c1e6edf4e49af8110287cdc1ae, type: 3}

@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 5377110448938385902}
   - component: {fileID: 5377110448938385901}
   - component: {fileID: 5377110448938385900}
-  m_Layer: 3
+  m_Layer: 8
   m_Name: Gem
-  m_TagString: Untagged
+  m_TagString: Gem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,4 +135,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b64af3ad33b388242a520c26a1b97404, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gemValue: 5
+  gemValue: 2

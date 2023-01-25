@@ -5,25 +5,36 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    ScoreManager.instance.AddPoint (cherry, gem;)
+    public static ScoreManager instance;
+
     public TextMeshProUGUI cherryText;
     public TextMeshProUGUI gemText;
-
-    int cherry = 0;
-    int gem = 0;
-
-    public void AddPoint(int cherryValue)
-    {
-        cherry = cherry + cherryValue;
-        cherryText.text = cherry.ToString();
     
+    int cherry = 1;
+    int gem = 2;
+    
+    
+    private void Awake() {
+        instance = this;
     }
 
-    public void AddPoints(int gemValue)
-    {
-        gem = gem + gemValue;
-        gemText.text = gem.ToString();
+    public void Start () {
+        cherry = 0;
+        cherryText.text = ": " + cherry; 
+        gem = 0;
+        gemText.text = ": " + gem;
     }
+
+    public void AddPoint() {
+        cherry += 1;
+        cherryText.text = ": " + cherry;
+        gem += 2;
+        gemText.text = ": " + gem;
+    }
+    
+    
+
+   
 
     
 }

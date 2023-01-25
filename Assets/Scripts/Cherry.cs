@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class Cherry : MonoBehaviour
 {
-    private void Start()
-    {
-        GameManager.Instance.AddCherry();
-    }
-
+    private ScoreManager ScoreManager;
     public int cherryValue = 1;
-
+  
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player"))
-        {
+        {   
+           
+            Destroy (gameObject);
 
-            ScoreManager.instance.ChangeScore(cherryValue);
-
-            Destroy(gameObject);
-
+            
+            ScoreManager.instance.AddPoint();
+            
         }
+
+
     }
 
+ 
 }

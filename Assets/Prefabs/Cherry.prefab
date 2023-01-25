@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9078312528862580899}
   - component: {fileID: 9078312528862580903}
   - component: {fileID: 9078312528862580900}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cherry
   m_TagString: Cherry
   m_Icon: {fileID: 0}
@@ -135,4 +135,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d47c3ab935698a4a8ceead719e0fb11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ScoreManager: {fileID: 0}
   cherryValue: 1
