@@ -3930,7 +3930,7 @@ MonoBehaviour:
   - {fileID: 1738051780}
   - {fileID: 1068899579}
   - {fileID: 1480902465}
-  screenWidths: 
+  screenWidths: c00300000005000080070000
 --- !u!1 &924928156
 GameObject:
   m_ObjectHideFlags: 0
