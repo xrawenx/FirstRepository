@@ -26,6 +26,8 @@ public class PlayerLife : MonoBehaviour
          rb.bodyType = RigidbodyType2D.Static;
          anim.SetTrigger("Death");
 
+         AudioManager.instance.PlaySound (" ", transform.position);
+
          GameManager.Instance.ResetLevel(3f);
        }
 
