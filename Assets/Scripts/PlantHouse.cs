@@ -21,13 +21,14 @@ public class PlantHouse : MonoBehaviour
 
     private IEnumerator LevelCompleteSequence(Transform player)
     {
+        AudioManager.instance.PlaySound ("LevelComplete", transform.position);
         player.GetComponent<PlayerMovement>().enabled = false;
 
         yield return MoveTo(player, bush.position);
         yield return MoveTo(player, player.position + Vector3.right);
         yield return MoveTo(player, player.position + Vector3.right + Vector3.down);
         yield return MoveTo(player, planthouse.position);
-
+        
         player.gameObject.SetActive(false);
 
         yield return new WaitForSeconds(2f);

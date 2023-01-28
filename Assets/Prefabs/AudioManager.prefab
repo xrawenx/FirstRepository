@@ -117,21 +117,21 @@ MonoBehaviour:
   - groupID: Impact
     group:
     - {fileID: 8300000, guid: b1a3d57a4a9edd64ea83e6d4d6ac665f, type: 3}
-  - groupID: Player Jump
+  - groupID: PlayerJump
     group:
     - {fileID: 8300000, guid: bec9c69fddf61574b90522cfd43fa57c, type: 3}
-  - groupID: Player Collect
+  - groupID: PlayerCollect
     group:
     - {fileID: 8300000, guid: 2b17cb68a6c8cc84a8bae0b83b8cd695, type: 3}
-  - groupID: Player Death
+  - groupID: PlayerDeath
     group:
-    - {fileID: 8300000, guid: b52c7fd3bdc75fb49b8c63608482d916, type: 3}
-  - groupID: Enemy Death
+    - {fileID: 8300000, guid: 435f9a42723b0ef4f8f972187bca72c1, type: 3}
+  - groupID: EnemyDeath
     group:
     - {fileID: 8300000, guid: ae87c38fedc94b94899ced0ba060a997, type: 3}
-  - groupID: Level Complete
+  - groupID: LevelComplete
     group:
     - {fileID: 8300000, guid: e04a8ef9c5242e24f8f309abf1d5ec69, type: 3}
-  - groupID: Game Over
+  - groupID: GameOver
     group:
-    - {fileID: 8300000, guid: 36d3677fcccbfb745a06daece19458db, type: 3}
+    - {fileID: 8300000, guid: b52c7fd3bdc75fb49b8c63608482d916, type: 3}
