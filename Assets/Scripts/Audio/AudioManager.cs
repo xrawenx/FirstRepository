@@ -18,10 +18,10 @@ public class AudioManager : MonoBehaviour {
 	Transform audioListener;
 	Transform playerT;
 
+
 	SoundLibrary library;
 
 	void Awake() {
-
 		if (instance != null) {
 			Destroy (gameObject);
 		} else {
@@ -49,6 +49,14 @@ public class AudioManager : MonoBehaviour {
 			masterVolumePercent = PlayerPrefs.GetFloat ("master vol", 1);
 			sfxVolumePercent = PlayerPrefs.GetFloat ("sfx vol", 1);
 			musicVolumePercent = PlayerPrefs.GetFloat ("music vol", 1);
+		}
+	}
+
+	void OnLevelWasLoaded(int index) {
+		if (playerT == null) {
+			if (FindObjectOfType<PlayerLife> () != null) {
+				playerT = FindObjectOfType<PlayerLife> ().transform;
+			}
 		}
 	}
 

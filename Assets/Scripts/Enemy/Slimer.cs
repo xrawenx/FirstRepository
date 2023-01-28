@@ -22,6 +22,7 @@ public class Slimer : MonoBehaviour
     
     private void Flatten()
     {
+        AudioManager.instance.PlaySound ("Impact", transform.position);
         GetComponent<Collider2D>().enabled = false;
         GetComponent<EntityMovement>().enabled = false;
         GetComponent<AnimatedSprite>().enabled = false;
@@ -31,6 +32,7 @@ public class Slimer : MonoBehaviour
 
     private void Hit()
     {
+        AudioManager.instance.PlaySound("EnemyDeath", transform.position);
         GetComponent<AnimatedSprite>().enabled = false;
         GetComponent<DeathAnimation>().enabled = true;
         Destroy(gameObject, 3f);

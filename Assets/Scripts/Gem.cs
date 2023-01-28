@@ -21,6 +21,7 @@ public class Gem : MonoBehaviour
            
             Destroy (gameObject, 1);
             anim.SetTrigger("Destroy");
+            AudioManager.instance.PlaySound ("PlayerCollect", transform.position);
 
             
             ScoreManager.instance.AddPoint();

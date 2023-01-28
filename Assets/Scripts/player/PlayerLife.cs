@@ -7,6 +7,9 @@ public class PlayerLife : MonoBehaviour
        private Rigidbody2D rb;
        private Animator anim;
        public DeathAnimation deathAnimation { get; private set; }
+
+       [Header("Effects")]
+       public AudioClip Playerdeath;
      
        private void Start()
        {
@@ -26,7 +29,7 @@ public class PlayerLife : MonoBehaviour
          rb.bodyType = RigidbodyType2D.Static;
          anim.SetTrigger("Death");
 
-         AudioManager.instance.PlaySound (" ", transform.position);
+         AudioManager.instance.PlaySound ("PlayerDeath", transform.position);
 
          GameManager.Instance.ResetLevel(3f);
        }
