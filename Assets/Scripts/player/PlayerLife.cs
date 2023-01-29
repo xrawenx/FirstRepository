@@ -8,6 +8,12 @@ public class PlayerLife : MonoBehaviour
        private Animator anim;
        public DeathAnimation deathAnimation { get; private set; }
 
+       public float startingHealth;
+	   public float health { get; protected set; }
+	   protected bool dead;
+
+       public event System.Action OnDeath;
+
        
       private void Start()
        {
@@ -40,6 +46,14 @@ public class PlayerLife : MonoBehaviour
             Death();
          }
        }
+
+       public virtual void Die() {
+		dead = true;
+		if (OnDeath != null) {
+			OnDeath();
+		}
+		GameObject.Destroy (gameObject);
+	}
 
 
 }

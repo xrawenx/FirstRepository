@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +11,9 @@ public class GameManager : MonoBehaviour
     public int stage { get; private set; }
     public int lives { get; private set; }
     public int cherry { get; private set; }
+
+    public Image fadePlane;
+    public GameObject gameOverUI;
 
     private void Awake()
     {
@@ -32,6 +37,8 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 60;
 
         NewGame();
+        FindObjectOfType<PlayerLife> ().OnDeath += GameOver;
+        gameOverUI.SetActive (false);
     }
 
     public void NewGame()
@@ -45,8 +52,21 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
       AudioManager.instance.PlaySound2D ("GameOver");
+      StartCoroutine(Fade (Color.clear, Color.black,1));
+        gameOverUI.SetActive (true);
         
       NewGame();
+    }
+
+    IEnumerator Fade(Color from, Color to, float time) {
+        float speed = 1 / time;
+        float percent = 0;
+
+        while (percent < 1) {
+            percent += Time.deltaTime * speed;
+            fadePlane.color = Color.Lerp(from,to,percent);
+            yield return null;
+        }
     }
 
     public void LoadLevel(int world, int stage)
