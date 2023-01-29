@@ -21,7 +21,6 @@ public class PlantHouse : MonoBehaviour
 
     private IEnumerator LevelCompleteSequence(Transform player)
     {
-        AudioManager.instance.PlaySound ("LevelComplete", transform.position);
         player.GetComponent<PlayerMovement>().enabled = false;
 
         yield return MoveTo(player, bush.position);
@@ -34,6 +33,7 @@ public class PlantHouse : MonoBehaviour
         yield return new WaitForSeconds(2f);
 
         GameManager.Instance.LoadLevel(nextWorld, nextStage);
+        AudioManager.instance.PlaySound2D ("LevelComplete");
     }
 
     private IEnumerator MoveTo(Transform subject, Vector3 position)

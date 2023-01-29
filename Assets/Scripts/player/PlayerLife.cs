@@ -8,10 +8,8 @@ public class PlayerLife : MonoBehaviour
        private Animator anim;
        public DeathAnimation deathAnimation { get; private set; }
 
-       [Header("Effects")]
-       public AudioClip Playerdeath;
-     
-       private void Start()
+       
+      private void Start()
        {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -42,13 +40,6 @@ public class PlayerLife : MonoBehaviour
             Death();
          }
        }
-
-       public void RestartLevel()
-       {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-       }
-
-       
 
 
 }

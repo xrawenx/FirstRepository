@@ -999,7 +999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd2a5c2fa10e2274ca8d7f3983c48d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 1302190036}
+  cherryText: {fileID: 0}
+  gemText: {fileID: 0}
 --- !u!4 &229687392
 Transform:
   m_ObjectHideFlags: 0
@@ -30734,7 +30735,6 @@ GameObject:
   m_Component:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
-  - component: {fileID: 519420029}
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
   m_Layer: 0
@@ -30744,14 +30744,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &519420029
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0

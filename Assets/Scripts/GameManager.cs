@@ -44,9 +44,9 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        // TODO: show game over screen
-
-        NewGame();
+      AudioManager.instance.PlaySound2D ("GameOver");
+        
+      NewGame();
     }
 
     public void LoadLevel(int world, int stage)
