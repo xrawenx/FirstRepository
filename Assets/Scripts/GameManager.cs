@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
 
     public Image fadePlane;
     public GameObject gameOverUI;
+    
 
     private void Awake()
     {
@@ -39,6 +40,7 @@ public class GameManager : MonoBehaviour
         NewGame();
         FindObjectOfType<PlayerLife> ().OnDeath += GameOver;
         gameOverUI.SetActive (false);
+        
     }
 
     public void NewGame()
@@ -113,5 +115,14 @@ public class GameManager : MonoBehaviour
     {
         lives++;
     }
+
+    // UI Input
+    public void StartNewGame() {
+		SceneManager.LoadScene ("1-1");
+	}
+
+	public void ReturnToMainMenu() {
+		SceneManager.LoadScene ("Menu");
+	}
 
 }

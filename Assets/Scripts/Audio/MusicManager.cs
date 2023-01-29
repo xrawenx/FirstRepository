@@ -4,13 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class MusicManager : MonoBehaviour {
 
-	public AudioClip mainTheme;
+    public AudioClip mainTheme;
 	public AudioClip menuTheme;
 
 	string sceneName;
 
 	void Start() {
 		OnLevelWasLoaded (0);
+		
 	}
 
 
