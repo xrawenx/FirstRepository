@@ -10,12 +10,13 @@ public class MusicManager : MonoBehaviour {
 	string sceneName;
 
 	void Start() {
-		OnLevelWasLoaded (0);
 		
-	}
+        SceneManager.sceneLoaded += this.OnLoadCallback;
+    }
 
 
-	void OnLevelWasLoaded(int sceneIndex) {
+    void OnLoadCallback(Scene scene, LoadSceneMode sceneMode)
+    {
 		string newSceneName = SceneManager.GetActiveScene ().name;
 		if (newSceneName != sceneName) {
 			sceneName = newSceneName;

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour {
 
@@ -22,7 +23,8 @@ public class AudioManager : MonoBehaviour {
 	SoundLibrary library;
 
 	void Awake() {
-		if (instance != null) {
+        SceneManager.sceneLoaded += this.OnLoadCallback;
+        if (instance != null) {
 			Destroy (gameObject);
 		} else {
 
@@ -52,7 +54,8 @@ public class AudioManager : MonoBehaviour {
 		}
 	}
 
-	void OnLevelWasLoaded(int index) {
+    void OnLoadCallback(Scene scene, LoadSceneMode sceneMode)
+    {
 		if (playerT == null) {
 			if (FindObjectOfType<PlayerLife> () != null) {
 				playerT = FindObjectOfType<PlayerLife> ().transform;
