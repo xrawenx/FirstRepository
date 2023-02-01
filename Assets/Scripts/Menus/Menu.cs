@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Menu : MonoBehaviour
 {
-	public GameObject mainMenuHolder;
+    public GameObject mainMenuHolder;
 	public GameObject controlsMenuHolder;
 	public GameObject volumeMenuHolder;
 	public GameObject settingsMenuHolder;

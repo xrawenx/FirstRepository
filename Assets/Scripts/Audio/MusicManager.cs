@@ -7,6 +7,7 @@ public class MusicManager : MonoBehaviour {
     public AudioClip mainTheme;
 	public AudioClip menuTheme;
 
+
 	string sceneName;
 
 	void Start() {
@@ -38,6 +39,7 @@ public class MusicManager : MonoBehaviour {
 			Invoke ("PlayMusic", clipToPlay.length);
 		}
 
-	}
+
+    }
 
 }
