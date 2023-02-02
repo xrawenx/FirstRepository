@@ -51,6 +51,7 @@ GameObject:
   - component: {fileID: 5800547146866505333}
   - component: {fileID: 5800547146866505328}
   - component: {fileID: 5800547146866505331}
+  - component: {fileID: 3277605159180882868}
   - component: {fileID: 5800547146866505330}
   m_Layer: 0
   m_Name: AudioManager
@@ -101,6 +102,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainTheme: {fileID: 8300000, guid: cf29c692e849749c7a9d20d6575e744f, type: 3}
   menuTheme: {fileID: 8300000, guid: 6c7402b6b3095464d9db850885c4d565, type: 3}
+--- !u!114 &3277605159180882868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5800547146866505335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0712ce23365c5f641b89e053dc3a7d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioMixer: {fileID: 24100000, guid: cb44b99411aa1814d862faeb4d2959cf, type: 2}
 --- !u!114 &5800547146866505330
 MonoBehaviour:
   m_ObjectHideFlags: 0

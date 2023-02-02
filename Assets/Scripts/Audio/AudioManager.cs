@@ -23,6 +23,8 @@ public class AudioManager : MonoBehaviour {
 
 	SoundLibrary library;
 
+     
+
 	void Awake() {
         SceneManager.sceneLoaded += this.OnLoadCallback;
         if (instance != null) {
