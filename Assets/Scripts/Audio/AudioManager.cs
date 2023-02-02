@@ -8,8 +8,8 @@ public class AudioManager : MonoBehaviour {
 	public enum AudioChannel {Master, Sfx, Music};
 
 	public float masterVolumePercent { get; private set; } = .2f;
-	public float sfxVolumePercent { get; private set; } = 1;
-	public float musicVolumePercent { get; private set; } = 1;
+	public float sfxVolumePercent { get; private set; } = 1f;
+	public float musicVolumePercent { get; private set; } = 1f;
 
 	AudioSource sfx2DSource;
 	AudioSource[] musicSources;
@@ -98,6 +98,8 @@ public class AudioManager : MonoBehaviour {
 		musicSources [activeMusicSourceIndex].Play ();
 
 		StartCoroutine(AnimateMusicCrossfade(fadeDuration));
+
+		
 	}
 
 	public void PlaySound(AudioClip clip, Vector3 pos) {
