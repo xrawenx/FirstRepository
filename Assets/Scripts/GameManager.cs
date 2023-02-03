@@ -12,8 +12,8 @@ public class GameManager : MonoBehaviour
     public int lives { get; private set; }
     public int cherry { get; private set; }
 
-    public Image fadePlane;
     public GameObject gameOverUI;
+    public float resetDelay = 2f;
     
 
     private void Awake()
@@ -54,22 +54,11 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
       AudioManager.instance.PlaySound2D ("GameOver");
-      StartCoroutine(Fade (Color.clear, Color.black,1));
-        gameOverUI.SetActive (true);
+      gameOverUI.SetActive (true);
         
       NewGame();
     }
 
-    IEnumerator Fade(Color from, Color to, float time) {
-        float speed = 1 / time;
-        float percent = 0;
-
-        while (percent < 1) {
-            percent += Time.deltaTime * speed;
-            fadePlane.color = Color.Lerp(from,to,percent);
-            yield return null;
-        }
-    }
 
     public void LoadLevel(int world, int stage)
     {
@@ -84,9 +73,9 @@ public class GameManager : MonoBehaviour
         LoadLevel(world, stage + 1);
     }
 
-    public void ResetLevel(float delay)
+    public void ResetLevel(float resetdelay)
     {
-        Invoke(nameof(ResetLevel), delay);
+        Invoke(nameof(ResetLevel), resetdelay);
     }
 
     public void ResetLevel()
@@ -122,7 +111,7 @@ public class GameManager : MonoBehaviour
 	}
 
 	public void ReturnToMainMenu() {
-		SceneManager.LoadScene ("Menu");
+		SceneManager.LoadScene ("MainMenu");
 	}
 
 }

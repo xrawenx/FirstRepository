@@ -34,17 +34,21 @@ public class PlayerLife : MonoBehaviour
          anim.SetTrigger("Death");
 
          AudioManager.instance.PlaySound ("PlayerDeath", transform.position);
-
-         GameManager.Instance.ResetLevel(3f);
-       }
+        
+         GameManager.Instance.ResetLevel(4f);
+         FindObjectOfType<GameManager>().GameOver();
+    }
 
 
        public void OnCollisionEnter2D(Collision2D collision) 
        { 
          if (collision.gameObject.CompareTag("Trap"))
          {
+            
             Death();
-         }
+            
+
+        }
        }
 
        public virtual void Die() {
@@ -53,7 +57,9 @@ public class PlayerLife : MonoBehaviour
 			OnDeath();
 		}
 		GameObject.Destroy (gameObject);
-	}
+        
+        
+    }
 
 
 }
