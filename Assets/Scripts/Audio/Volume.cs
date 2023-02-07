@@ -14,4 +14,14 @@ public class Volume : MonoBehaviour
         audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
     }
 
+    public void SetMusicVolume(float volume)
+    {
+        audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+    }
+
+    public void SetSFXVolume(float volume)
+    {
+        audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
+    }
+
 }
