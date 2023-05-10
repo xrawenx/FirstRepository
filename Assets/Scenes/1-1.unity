@@ -52372,6 +52372,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5800547146866505328, guid: 06aae22f43fa8284c918953e170ab093, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: cb44b99411aa1814d862faeb4d2959cf, type: 2}
+    - target: {fileID: 5800547146866505328, guid: 06aae22f43fa8284c918953e170ab093, type: 3}
+      propertyPath: audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: cb44b99411aa1814d862faeb4d2959cf, type: 2}
     - target: {fileID: 5800547146866505333, guid: 06aae22f43fa8284c918953e170ab093, type: 3}
       propertyPath: m_RootOrder
       value: 13

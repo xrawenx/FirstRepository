@@ -41,6 +41,7 @@ AudioMixerGroupController:
   m_GroupID: 7e3b28fdba75ccb4d8785fd54b03c5ef
   m_Children:
   - {fileID: 2469982942908859327}
+  - {fileID: 6856866595572906520}
   m_Volume: 99a5b0a0c11cd14459236c5bdeca3ba1
   m_Pitch: 7d1202b4c4247794ba1224af86796c4f
   m_Send: 00000000000000000000000000000000
@@ -74,7 +75,7 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: 7e713b8225ebdea429ef243c88f9ec5a
   m_FloatValues:
-    99a5b0a0c11cd14459236c5bdeca3ba1: 0.074443914
+    99a5b0a0c11cd14459236c5bdeca3ba1: 0
     c4ffb9e1259e0dd4da396850a0d98c56: -40
   m_TransitionOverrides: {}
 --- !u!243 &2469982942908859327
@@ -86,14 +87,13 @@ AudioMixerGroupController:
   m_Name: Music
   m_AudioMixer: {fileID: 24100000}
   m_GroupID: e840ff93028221f4f8e3ac67bd1c8892
-  m_Children:
-  - {fileID: 6856866595572906520}
+  m_Children: []
   m_Volume: 576e8d9da88cfda49837a3f70df55601
   m_Pitch: 00e6d0062874301419f899b54f99f893
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 6704267970457000794}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 8
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0
@@ -140,7 +140,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 5042893756407458512}
-  m_UserColorIndex: 0
+  m_UserColorIndex: 6
   m_Mute: 0
   m_Solo: 0
   m_BypassEffects: 0

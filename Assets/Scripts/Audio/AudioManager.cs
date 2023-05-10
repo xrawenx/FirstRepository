@@ -11,7 +11,10 @@ public class AudioManager : MonoBehaviour {
 	public float sfxVolumePercent { get; private set; } = 1f;
 	public float musicVolumePercent { get; private set; } = 1f;
 
-	AudioSource sfx2DSource;
+    public AudioMixerGroup audioMixer;
+    [SerializeField] AudioMixer mixer;
+
+    AudioSource sfx2DSource;
 	AudioSource[] musicSources;
 	int activeMusicSourceIndex;
 
