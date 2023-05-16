@@ -11,6 +11,10 @@ public class AudioManager : MonoBehaviour {
 	public float sfxVolumePercent { get; private set; } = 1f;
 	public float musicVolumePercent { get; private set; } = 1f;
 
+    public const string MASTER_KEY = "MasterVolume";
+    public const string MUSIC_KEY = "MusicVolume";
+    public const string SFX_KEY = "SFXVolume";
+
     public AudioMixerGroup audioMixer;
     [SerializeField] AudioMixer mixer;
 
@@ -91,7 +95,11 @@ public class AudioManager : MonoBehaviour {
 		musicSources [0].volume = musicVolumePercent * masterVolumePercent;
 		musicSources [1].volume = musicVolumePercent * masterVolumePercent;
 
-		PlayerPrefs.SetFloat ("master vol", masterVolumePercent);
+        float masterVolume = PlayerPrefs.GetFloat(MASTER_KEY, 1f);
+        float musicVolume = PlayerPrefs.GetFloat(MUSIC_KEY, 1f);
+        float sfxVolume = PlayerPrefs.GetFloat(SFX_KEY, 1f);
+
+        PlayerPrefs.SetFloat ("master vol", masterVolumePercent);
 		PlayerPrefs.SetFloat ("sfx vol", sfxVolumePercent);
 		PlayerPrefs.SetFloat ("music vol", musicVolumePercent);
 		PlayerPrefs.Save ();
@@ -132,4 +140,6 @@ public class AudioManager : MonoBehaviour {
 			yield return null;
 		}
 	}
+
+
 }

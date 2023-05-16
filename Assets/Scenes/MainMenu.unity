@@ -1598,14 +1598,14 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1474252894}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
-  m_WholeNumbers: 1
-  m_Value: 100
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Volume, Assembly-CSharp
+      - m_Target: {fileID: 845803890}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
         m_MethodName: SetMusicVolume
         m_Mode: 0
         m_Arguments:
@@ -2419,9 +2419,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Volume, Assembly-CSharp
-        m_MethodName: SetVolume
+      - m_Target: {fileID: 845803890}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SetMasterVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3843,15 +3843,15 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1887669754}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 100
-  m_WholeNumbers: 1
-  m_Value: 100
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Volume, Assembly-CSharp
-        m_MethodName: SetSFXVolume
+      - m_Target: {fileID: 845803890}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: SetSfxVolume
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3871,6 +3871,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845803887}
   - component: {fileID: 845803889}
+  - component: {fileID: 845803891}
   - component: {fileID: 845803890}
   m_Layer: 5
   m_Name: MainMenu
@@ -3940,6 +3941,22 @@ MonoBehaviour:
   fullscreenToggle:
   - {fileID: 521133414}
   screenWidths: c00300000005000080070000
+--- !u!114 &845803891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 845803886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0712ce23365c5f641b89e053dc3a7d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: cb44b99411aa1814d862faeb4d2959cf, type: 2}
+  masterSlider: {fileID: 0}
+  musicSlider: {fileID: 308464517}
+  sfxSlider: {fileID: 819574621}
 --- !u!1 &880336393
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,6 +4624,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3277605159180882868, guid: 06aae22f43fa8284c918953e170ab093, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: cb44b99411aa1814d862faeb4d2959cf, type: 2}
+    - target: {fileID: 3277605159180882868, guid: 06aae22f43fa8284c918953e170ab093, type: 3}
+      propertyPath: sfxSlider
+      value: 
+      objectReference: {fileID: 819574621}
+    - target: {fileID: 3277605159180882868, guid: 06aae22f43fa8284c918953e170ab093, type: 3}
+      propertyPath: musicSlider
+      value: 
+      objectReference: {fileID: 308464517}
+    - target: {fileID: 3277605159180882868, guid: 06aae22f43fa8284c918953e170ab093, type: 3}
+      propertyPath: masterSlider
+      value: 
+      objectReference: {fileID: 487937709}
+    - target: {fileID: 5800547146866505328, guid: 06aae22f43fa8284c918953e170ab093, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: cb44b99411aa1814d862faeb4d2959cf, type: 2}
+    - target: {fileID: 5800547146866505328, guid: 06aae22f43fa8284c918953e170ab093, type: 3}
+      propertyPath: audioMixer
+      value: 
+      objectReference: {fileID: 24300002, guid: cb44b99411aa1814d862faeb4d2959cf, type: 2}
     - target: {fileID: 5800547146866505333, guid: 06aae22f43fa8284c918953e170ab093, type: 3}
       propertyPath: m_RootOrder
       value: 2
